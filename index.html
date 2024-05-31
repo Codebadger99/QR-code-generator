@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div
+      class="grid gap-5 place-content-center min-h-screen mx-auto items-center justify-center w-full"
+    >
+      <div>
+        <img src="./public/logo-qr-generator.svg" alt="" class="mx-auto" />
+      </div>
+      <div class="grid items-center justify-center">
+        <input
+          type="text"
+          placeholder="Enter an url"
+          class="py-5 px-4 w-full rounded-xl border-[#3662E3] border-4 outline-none bg-[#364153] text-white"
+        />
+        <button
+          class="px-3 py-4 bg-[#3662E3] w-28 lg:w-32 rounded-lg relative bottom-16 ml-auto right-2 text-white"
+        >
+          QR code
+        </button>
+      </div>
+      <div>
+        <canvas id="canvas" class="rounded-lg mx-auto"></canvas>
+        <div
+          class="flex align-center justify-center gap-4 mt-5"
+          id="button-group"
+        >
+          <!--<button class="px-3 py-4 bg-[#3662E3] w-28 lg:w-32 rounded-lg text-white">
+            Share
+          </button> -->
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

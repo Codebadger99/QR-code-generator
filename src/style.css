@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Outfit Variable', sans-serif;
+    font-size: 16px;
+    background-color: #111729;
+    background-image: url(../public/bg-illustration.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.w-full{
+    width: 80vw;
+}
+
+.min-h-screen{
+    min-height: 100vh;
+}
